@@ -1,0 +1,54 @@
+/* Para Mobile */
+.navBarContainer {
+    /* Barra superior con color1 */
+    background-color: var(--color1);
+
+    /* Display */
+    display: flex;
+    justify-content:end;
+    align-items: center;
+
+    /* Posición y tamaño */
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.navBar {
+    /* Contenedor de los enlaces del mobile */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--colorLetra);
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    /* Tamaño */
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 75%;
+    height: 100%;
+}
+
+.navBar.active {
+    left: 0;
+    top: 0;
+}
+
+.linkContainer{
+    /* Contenedor del grupo de los enlaces */
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    
+}
+.linkContainer.active {
+    background-color: var(--color1);
+}
+.linkContainer:hover {
+    background-color: var(--color2);
+}
