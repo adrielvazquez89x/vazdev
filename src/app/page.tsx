@@ -1,8 +1,11 @@
+import Description from "./components/description/description";
+import SliderMain from "./components/sliderMain/slider";
 
 export default function Home() {
   return (
     <main>
-      <h1>Home</h1>
+      <SliderMain />
+      <Description />
     </main>
   );
 }

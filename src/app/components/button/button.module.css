@@ -1,0 +1,19 @@
+.button {
+    background-color: var(--color1);
+    color: var(--colorLetra);
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 0;
+
+    width: 12rem;
+    z-index: 5;
+}
+
+.button:hover {
+    background-color: var(--color2);
+}

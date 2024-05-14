@@ -1,0 +1,23 @@
+.logoMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2.5rem 0;
+}
+
+.logoMainImg {
+    width: 400px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.description p {
+    max-width: 400px;
+    text-align: justify;
+}

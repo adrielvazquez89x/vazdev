@@ -1,17 +1,18 @@
-/* Para Mobile */
+/*  - - - - - - - - - - Para Mobile  - - - - - - - - - */
 .navBarContainer {
     /* Barra superior con color1 */
-    background-color: var(--color1);
+    background-color: var(--color3);
 
     /* Display */
     display: flex;
-    justify-content:end;
+    justify-content:space-between;
     align-items: center;
 
     /* Posición y tamaño */
     position: relative;
     width: 100%;
     height: 100px;
+    z-index: 2;
 }
 
 .navBar {
@@ -32,6 +33,7 @@
     top: 0;
     width: 75%;
     height: 100%;
+    z-index: 3;
 }
 
 .navBar.active {
@@ -51,4 +53,46 @@
 }
 .linkContainer:hover {
     background-color: var(--color2);
+}
+
+.btnMenu 
+{
+    padding: 0 1.25rem;
+    cursor: pointer;
+}
+/*  - - - - - - - - - - Para Desktop  - - - - - - - - - */
+
+@media(min-width:768px)
+{
+    .navBarContainer
+    {
+        height: 80px;
+        
+    }
+    .navBar
+    {
+        background-color: transparent;
+        flex-direction: row;
+        position: relative;
+        left: 0;
+    }
+    .btnMenu 
+    {
+        display: none;
+    }
+    .linkContainer
+    {
+        width: fit-content;
+        margin: 0 5px;
+    }
+    .linkContainer.active {
+        background-color: transparent;
+        color: var(--color1);
+        font-weight: 700;
+        text-align: center;
+    }
+    .linkContainer:hover {
+        background-color: transparent;
+        color: var(--color2);
+    }
 }
